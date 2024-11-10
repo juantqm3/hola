@@ -19,7 +19,7 @@ private apiUrl='http://localhost:8080/api/coches';
   }
 
   crearCoche(coche:Coche):Observable<Coche>{
-    return this.http.post<Coche>(this.apiUrl, Coche);
+    return this.http.post<Coche>(this.apiUrl, coche);
   }
   
   deleteCoche(id:number){
@@ -27,6 +27,6 @@ private apiUrl='http://localhost:8080/api/coches';
   }
 
   updateCoche(coche:Coche, id:number):Observable<Coche>{
-    return this.http.post<Coche>(`${this.apiUrl}/${id}`, Coche);
+    return this.http.put<Coche>(`${this.apiUrl}/${id}`, coche);
   }
 }
