@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { CocheComponent } from '../coche/coche.component';
+import { NotaComponent } from '../nota/nota.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CocheComponent],
+  imports: [NotaComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
